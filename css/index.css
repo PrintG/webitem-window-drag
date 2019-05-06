@@ -1,0 +1,74 @@
+@charset 'utf-8';
+
+html,body{
+}
+#window{
+	width: 1366px;
+	height: 630px;
+	background-image: url("../img/bg/1.jpg");
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#window .w-container{
+	position: relative;
+	width: 100%;
+	height: 620px;
+	padding: 5px 0;
+	overflow: hidden;
+}
+/* icon */
+#window .w-container .w-c-list li{
+	float: left;
+	width: 80px;
+	height: 60px;
+	margin-left: 3px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid transparent;
+}
+#window .w-container .w-c-list li.app:hover{
+	background-color: rgba(255,255,255,0.3);
+	border: 1px solid rgba(255,255,255,0.35);
+}
+#window .w-container .w-c-list li.active{
+	border: 1px dotted #fff;
+}
+#window .w-container .w-c-list li.active.click{
+	background-color: rgba(255,255,255,0.5);
+	border: 1px dotted #000;
+}
+#window .w-container .w-c-list li.dragEle{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+#window .w-container .w-c-list li.dragEle.show{
+	display: block;
+	-webkit-opacity: 0.8;
+	opacity: 0.8;
+}
+#window .w-container .w-c-list li img{
+	width: 35px;
+	height: 35px;
+	margin: 5px auto 0;
+}
+#window .w-container .w-c-list li span{
+	display: block;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	-webkit-text-shadow: 1px 1px 1px #000,2px 2px 1px #000;
+	text-shadow: 1px 1px 1px #000,2px 2px 1px #000;
+}
